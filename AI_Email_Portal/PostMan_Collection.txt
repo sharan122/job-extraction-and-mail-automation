@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "c0c55eb2-dc4b-4f7c-8bfc-ea5f50e50da3",
+		"name": "Email Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36982458"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Registeration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "Muhammed sanin",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "I am Muhammed Sanin from Malappuram, Kerala, currently  at Bridgeon Solutions as a Python Full Stack Developer. During This period, I developed an e-commerce platform with Django and an e-learning platform using Django REST Framework and React, featuring live streaming, real-time chat, and CI/CD pipelines. I am a self-taught developer skilled in tools like Celery, WebRTC, and Swagger, with strong interpersonal and presentation skills. I am pursuing a Bachelor of Commerce at Indira Gandhi University and am eager to join your company as a Python Developer to contribute my skills and grow professionally.",
+									"type": "text"
+								},
+								{
+									"key": "resume",
+									"type": "file",
+									"src": "postman-cloud:///1effca35-a6c7-41e0-ae0a-223f0c726b7e"
+								},
+								{
+									"key": "linkedin_url",
+									"value": "https://www.linkedin.com/in/muhammedsanin",
+									"type": "text"
+								},
+								{
+									"key": "github_url",
+									"value": "https://github.com/sanin6969",
+									"type": "text"
+								},
+								{
+									"key": "portfolio_url",
+									"value": "https://portfolio-muhammedsanin.vercel.app/",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Zxcv1234",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "sanin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "muhdsaninev@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "sanin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Zxcv1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"token",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Applied Jobs",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Job Position",
+			"item": [
+				{
+					"name": "create job position",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "List all Job Positions",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Apply for Job",
+			"item": [
+				{
+					"name": "apply",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "job application",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Edit job Application",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
