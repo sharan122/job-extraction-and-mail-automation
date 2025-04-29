@@ -114,9 +114,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'job_db',         
-        'USER': 'sharan123',       
+        'USER': 'sharan1234',       
         'PASSWORD': 'test@123',  
-        'HOST': 'sharan123.mysql.pythonanywhere-services.com',   
+        'HOST': 'sharan1234.mysql.pythonanywhere-services.com',   
         'PORT': '3306',         
     }
 }
