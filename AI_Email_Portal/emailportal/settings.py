@@ -112,12 +112,12 @@ WSGI_APPLICATION = "emailportal.wsgi.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'job_db',         
-        'USER': 'sharan1234',       
-        'PASSWORD': 'test@123',  
-        'HOST': 'sharan1234.mysql.pythonanywhere-services.com',   
-        'PORT': '3306',         
+        'USER': 'postgres',       
+        'PASSWORD': 'sharan123',  
+        'HOST': 'localhost',   
+        'PORT': '5432',         
     }
 }
 
